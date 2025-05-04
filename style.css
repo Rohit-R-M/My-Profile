@@ -1,0 +1,319 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background-color: #081b29;
+}
+header .top{
+    font-family:'Poppins',sans-serif;
+    color: aliceblue;
+    padding: 5px;
+    padding-left: 8%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header h1{
+    transition: 0.5s;
+}
+header h1:hover{
+    transform: scale(1.1);
+    z-index: 3;
+    color: #00abf0;
+}
+
+.top nav{
+    padding: 20px;
+    margin: 15px;
+    text-align: right;
+    cursor: pointer;
+}
+.top nav a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 8px;
+    margin-left: 30px;
+    transition: 0.3;
+}
+.top nav a:nth-child(1){
+    color: #00abf0;
+    border: 1px solid #00abf0;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom-width: 3px;
+}
+.top nav a:hover{
+    color: #00abf0;
+    border: 1px solid #00abf0;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom-width: 3px;
+}
+.well{
+    margin: 20px ;
+    padding-left: 40px;
+    height: 60vh;
+    display: flex;
+}
+.home-content{
+    max-width: 600px;
+}
+@keyframes h1{
+    0% {
+        transform: translateY(-100px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.home-content h1{
+    font-size: 35px;
+    font-weight: 700;
+    animation-name: h1;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+@keyframes h3{
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.home-content h3{
+    animation: h3;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.home-content hr{
+    border: 2px solid #00abf0;
+    color: #00abf0;
+    width: 170px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.image{
+    padding-left:20%;
+    width: 60%;
+    margin: auto;
+    padding-right: 10%;
+}
+/*
+@keyframes img {
+    from{
+        transform: translateX(0px) rotateY(0);
+    }
+    to{
+        transform: translateX(0px) rotateY(360deg);
+    }
+}*/
+.front img{
+    perspective: 200px;
+    border:2px solid #00abf0;
+    width: 70%;
+    height: 50%;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 2px 2px 10px #00abf0;
+    transition: 0.8s;
+    animation-name: img;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+.home-content h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content .btn-box{
+    width: 500px;
+    margin: 10px;
+    justify-content: space-between;
+}
+.btn-box a{
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    color: #081b29;
+    transition: 0.3s;
+}
+.btn-box a:hover{
+    transform: scale(1.1);
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.token{
+    padding-left: 10%;
+}
+.token i{
+    display: inline-flex;
+    font-size: 20px;
+    color: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 30%;
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+@media (max-width:500px){
+    header .top{
+        font-family:'Poppins',sans-serif;
+        color: aliceblue;
+        padding: 5px;
+        padding-left: 8%;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+        z-index: 100;
+    }
+    .top nav{
+        align-items: right;
+    }
+}
+.bubbles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bubbles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 171, 240, 0.3);
+    border-radius: 50%;
+    animation: bubble 20s linear infinite;
+    bottom: -100px;
+}
+
+.bubbles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 15s;
+    animation-delay: 2s;
+}
+
+.bubbles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 17s;
+}
+
+.bubbles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 20s;
+    animation-delay: 1s;
+}
+
+.bubbles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 12s;
+}
+
+.bubbles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-duration: 25s;
+}
+
+.bubbles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-duration: 30s;
+}
+
+.bubbles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+.bubbles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.bubbles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-duration: 45s;
+    animation-delay: 0s;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-1000px) scale(1.5);
+        opacity: 0;
+    }
+}

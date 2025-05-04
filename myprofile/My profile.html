@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-pic">
+                <img src="Profile PHT.jpg" alt="Profile Picture">
+            </div>
+            <h1>Rohit Mantur</h1>
+            <p>UG Computer Science Student at Basaveshwar Engineering College, Bagalkot</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="C:\Users\rohit\OneDrive\Documents\Web designing\homme\home.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! My self Rohit Mantur, a passionate Computer Science student at Basaveshwar Engineering College. I love coding, solving problems, and building innovative projects & providing security to digital devices.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>BASAVESHWAR ENGINEERING COLLEGE, BAGALKOT</h3>
+                        <p>Bachelor of Engineer in Computer Science, 2022-2026</p>
+                    </li>
+                    <li>
+                        <h3>Acadamic Score</h3>
+                        <p>1 year: 7.65 CGPA</p>
+                        <p>2 year: 8.35 CGPA</p>
+                        <p>3 year: 7.90 CGPA</p>
+                        <p>4 year: nill</p>
+                        <p>OverAll: 7.99 CGPA</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <div class="project">
+                        <h3>ToDo List App (Flutter)</h3>
+                        <p><strong>Description:</strong> A task management app allowing users to add, update, delete, and mark tasks as complete.</p>
+                        <p><strong>Features:</strong>
+                        <ul>
+                            <li>Dynamic task list with local storage using shared_preferences or a database like sqflite.</li>
+                            <li>Clean UI with Material Design.</li>
+                            <li>Stateful widget management for real-time task updates</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h3>BMI Calculator App (Flutter)</h3>
+                        <p><strong>Description:</strong> A simple Body Mass Index calculator that takes height and weight input and computes the BMI.</p>
+                        <p> <strong>Features:</strong>
+                            <ul>
+                                <li>Intuitive UI with sliders or text input for height and weight.</li>
+                                <li>Instant BMI calculation with health category (e.g., Underweight, Normal, Overweight).</li>
+                                <li>Responsive design with real-time updates.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h3>SAM - Student Academic Manager (Flutter + Firebase)</h3>
+
+                            <p><strong>Description:</strong> A comprehensive academic management app designed for students, teachers, and admins to streamline attendance, results, schedules, notices, and profile data.</p>
+
+                            <h3>Features:</h3>
+                            <ul>
+                            <li><strong>Role-Based Navigation:</strong> Smart routing from splash screen to Student, Teacher, or Admin dashboards.</li>
+                            <li><strong>Authentication:</strong> Email/Phone OTP-based sign-up and login using Firebase Authentication.</li>
+                            <li><strong>Firestore Integration:</strong> Real-time fetching and updating of :
+                                <ul>
+                                <li>Course details (based on semester &amp; branch)</li>
+                                <li>Attendance (by USN or student ID)</li>
+                                <li>Results, Achievements, and Notices</li>
+                                <li>Admin-managed schedules (CRUD for weekly plans)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Profile Section:</strong> Dynamic profile with <code>CircleAvatar</code> image support and editable info.</li>
+                            <li><strong>Refreshable UI:</strong> Pull-to-refresh using <code>RefreshIndicator</code> for profile and home screens.</li>
+                            <li><strong>Modern UI/UX:</strong> Designed with <code>NexaBold</code> font, card-based layout, and intuitive icons.</li>
+                            </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <h3>Programming Languages</h3>
+                        <p>JavaScript, Python, Java, C, Dart</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Web & Application Development</h3>
+                        <p>HTML, CSS, JS, Flutter, Firebase</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Intrested Area</h3>
+                        <p>Computer Networks, Cyber Security</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form  action="https://api.web3forms.com/submit" method="post" id="surveyform">
+                    <input type="hidden" name="access_key" value="c3a58d1f-294f-456b-b607-99e7ba1cdb8f">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2022-26 Rohit R M, All Rights are Reserved </p>
+            <a href="https://www.instagram.com/invites/contact/?igsh=dTk2NGRpcjFpeTNt&utm_content=el07mc1"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Rohit-R-M"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rohit-mantur-652242193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="sscript.js"></script>
+</body>
+</html>
